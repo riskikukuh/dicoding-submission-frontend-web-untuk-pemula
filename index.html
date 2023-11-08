@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3>MyBook App</h3>
+    </header>
+
+    <main>
+        <!-- Form -->
+        <section id="#section_content">
+            <div class="row">
+                <div class="col flex-left">
+                    <h2>Form Input Book</h2>
+                    <form id="formInputBook">
+                        <div class="input-group">
+                            <label for="inputBookTitle">Judul</label>
+                            <input id="inputBookTitle" type="text" placeholder="Laskar Pelangi ..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="inputBookAuthor">Penulis</label>
+                            <input id="inputBookAuthor" type="text" placeholder="Andrea Hirata ..." required>
+                        </div>
+                        <div class="input-group">
+                            <label for="inputBookYear">Tahun</label>
+                            <input id="inputBookYear" type="number" placeholder="1998 ..." required>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="inputBookAlreadyRead">
+                            <label for="inputBookAlreadyRead">Already Read</label>
+                        </div>
+                        <div class="button-group">
+                            <input type="reset" value="Reset">
+                            <input type="submit" value="Save">
+                        </div>
+                    </form>
+                </div>
+                <div class="col flex-right">
+                    <div class="search-container">
+                        <form class="formSearchBook" id="formSearchBook">
+                            <input type="text" id="searchBookKeyword" placeholder="Find book ...">
+                            <input type="submit" value="Find">
+                        </form>
+                    </div>
+                    <div class="container-book-unread" id="">
+                        <h3>Unfinished Read</h3>
+                        <div id="list-unreaded-book">
+                        </div>
+                    </div>
+                    <div class="container-book-already-read" id="">
+                        <h3>Finished Read</h3>
+                        <div id="list-readed-book">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
